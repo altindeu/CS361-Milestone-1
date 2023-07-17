@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("images/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    background: rgba(39, 39, 39, 0.8);
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+}
+
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.submit input {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: 10px; 
+    display: block;  
+}
+.submit input:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will cover the full height */
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #fff;
+}
+
+.input-field {
+    /* ... */
+    padding-left: 35px; 
+}
+
+header {
+    text-align: center; 
+}
+
+.submit {
+    /* ... */
+    width: 100%; 
+    display: block; 
+}
+
+.two a {
+    color: rgb(0, 195, 255);
+}
+
+.two a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------- HOME PAGE ---------------------- */
+
+body.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will cover the full height */
+}
+
+.recipe-list {
+    /* This is blank for now */
+}
+
+.recipe-box {
+    background: rgba(39, 39, 39, 0.8);
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.recipe-detail {
+    background: rgba(39, 39, 39, 0.8);
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+    display: none;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.form-box.homepage {
+    width: auto;
+    height: auto;
+}
+
+.recipe-section, .recipe-detail {
+    width: 50%; 
+    padding: 20px; 
+    margin: 10px;
+    align-self: center;
+}
+
+.recipe-detail img {
+    max-width: 35%; 
+    height: auto;
+    display: block; 
+}
+
+/* ------------ Buttons ------------- */
+
+/* Style for Add Recipe Button */
+#addButton {
+    padding: 10px 20px;
+    background-color: #345acb;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Style for Delete Button */
+.deleteButton {
+    padding: 5px 10px;
+    background-color: #2ed1c7;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#recipeNameInput {
+    background: transparent; 
+    border: none; 
+    border-bottom: 2px solid white;
+    outline: none; 
+    color: #f2f2f2; 
+    font-size: 16px; 
+    padding: 10px 0; 
+}
+
+.logout-button {
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+    padding: 8px 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #e2e6ea;
+}
+
+#viewRecipesHeader {
+    text-align: center;
+    color: #0374e4;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-box {
+    background: rgba(39, 39, 39, 0.8);
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}

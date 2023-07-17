@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-list">
+            <!-- We are creating a dummy recipe list for it to appear on screen -->
+
+            <div class="header-box">
+            <!-- Add recipe header -->
+            <h1 id="viewRecipesHeader">View Recipes</h1>
+            <!-- Be transparent about the potential downsides message -->
+            <p id="viewRecipeHeader">Remember, It will take some time to put all the information about the recipe.</p>
+            </div>
+
+            <!-- Button to add recipes -->
+            <button id="addButton">Add Recipe</button>
+            
+            <!-- Link to logout -->
+            <a href="{{ url_for('login') }}" class="logout-button">Logout</a>
+
+            <!-- List of recipes -->
+            <div class="recipe-box">Recipe 1 (Example) <button class="deleteButton">Delete</button></div>
+            <div class="recipe-box">Recipe 2 (Example) <button class="deleteButton">Delete</button></div>
+            <div class="recipe-box">Recipe 3 (Example) <button class="deleteButton">Delete</button></div>
+        </div>
+        <div class="recipe-detail">
+            <!-- Detailed view of a recipe -->
+            <label for="recipeName">Your Recipe's Name:</label>
+            <input type="text" id="recipeNameInput" name="recipeName">
+            <img id="recipeImage" src="recipe-image-url" alt="Recipe image">
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            <h3>Ingredients</h3>
+            <p id="recipeIngredients" contenteditable="true">Edit Here</p>
+            <h3>Instructions</h3>
+            <p id="recipeInstructions" contenteditable="true">Edit Here</p>
+        </div>
+    </div>
+
+    <!-- Adding the script.js file here -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
